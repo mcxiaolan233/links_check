@@ -34,9 +34,9 @@ jobs:
         npm run build
         cd CheckSSL
         chmod +x checker.sh
-        ./checker.sh mcxiaolan.top www.mcxiaolan.top blog.mcxiaolan.top dns.mcxiaolan.top ssl.mcxiaolan.top myssl.pages.dev officedrive.herokuapp.com
+        ./checker.sh luqizhi.icu blog.xlrt.ml blog.ymds.top www.4050v.cn 1998z.cn ahdark.com
         cp -rf ./output/ct.json ../public/ct.json
-        echo "ssl.mcxiaolan.top" > ../public/CNAME
+        echo "links_check.mcxiaolan.top" > ../public/CNAME
         
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
